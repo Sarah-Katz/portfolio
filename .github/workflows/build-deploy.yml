@@ -17,7 +17,7 @@ jobs:
                   password: ${{ secrets.DOCKERHUB_PWD }}
 
             - name: Build
-              run: docker build -t portfolio ./api
+              run: docker build -t portfolio .
 
             - name: Tag
               run: docker tag portfolio:latest sarahkatz/portfolio:latest
